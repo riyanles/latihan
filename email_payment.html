@@ -74,11 +74,9 @@
         width: 250px;
         height: 52px;
         border-radius: 26px;
-        padding: 21px 12px;
-        margin-top: -51px;
-        margin-left: 350px;
+        margin-top: 14px;
+        margin-left: -123px;
         position: absolute;
-        align:center;
         background-color: #ec1e25;
         }
         .LACAK-PESANAN {
@@ -91,8 +89,9 @@
         line-height: normal;
         letter-spacing: normal;
         text-align: center;
-        padding: 0.5px;
-        color: #ffffff;
+        padding: 13.5px;
+        color: #ffffff !important;
+        border:none;
         }
     </style>
 
@@ -156,8 +155,8 @@
                                                 <tr>
                                                     <td align="center">
                                                         <p align="center"
-                                                            style="width:125px;padding:0.5px;height:10px;font-family:ooredoo-Heavy;font-size:25px;font-weight:900;font-style:normal;font-stretch:normal;line-height:normal;letter-spacing:normal;color: #ec1e25;">
-                                                            12908192
+                                                            style="width:auto;padding:0.5px;height:20px;font-family:ooredoo-Heavy;font-size:25px;font-weight:900;font-style:normal;font-stretch:normal;line-height:normal;letter-spacing:normal;color: #ec1e25;">
+                                                            {{.Code}}
                                                         </p>
                                                     </td>
                                                 </tr>
@@ -202,9 +201,9 @@
                                                         letter-spacing: 0.59px;
                                                         color: rgba(143, 143, 143, 0.6);
                                                         ">
-                                                                        NOMOR IM3 OOREDOO
+                                                                        <p style="margin: 0 0 5px 0">NOMOR IM3 OOREDOO</p>
                                                                         <p style="
-                                                            width: 100%;
+                                                            width:auto;
                                                             height: 10px;
                                                             font-family:ooredoo-Heavy;
                                                             font-size: 18px;
@@ -215,7 +214,7 @@
                                                             letter-spacing: 0.08px;
                                                             color: #191921;
                                                             ">
-                                                                            0857 1234 1234</p>
+                                                                            {{.Number}}</p>
                                                                     </td>
                                                                 </tr>
                                                                 <tr style="padding: 15px;">
@@ -233,8 +232,8 @@
                                                         letter-spacing: 0.59px;
                                                         color: rgba(143, 143, 143, 0.6);
                                                         ">
-                                                                        PAKET INTERNET
-                                                                        <p style="width: 175px;
+                                                                    <p style="margin: 0 0 5px 0"> PAKET INTERNET</p>
+                                                                        <p style="width: auto;
                                                             height: 22px;
                                                             font-family:ooredoo-Heavy;
                                                             font-size: 18px;
@@ -244,7 +243,7 @@
                                                             line-height: normal;
                                                             letter-spacing: 0.08px;
                                                             color: #191921;">
-                                                                            New Freedom +8GB</p>
+                                                                            {{.PackageName}}</p>
                                                                     </td>
                                                                 </tr>
                                                                 <tr >
@@ -262,7 +261,7 @@
                                                         letter-spacing: 0.59px;
                                                         color: rgba(143, 143, 143, 0.6);
                                                         ">
-                                                                        DETAIL PENGIRIMAN
+                                                                    <p style="margin: 0 0 5px 0"> DETAIL PENGIRIMAN </p>
                                                                         <p style="
                                                             /* width: 175px; */
                                                             height: 22px;
@@ -274,12 +273,12 @@
                                                             line-height: normal;
                                                             letter-spacing: 0.08px;
                                                             color: #191921;
-                                                            ">Ralph Rogers</p>
-                                                                        <span style="width: 77px;height: 17px;font-family:
+                                                            ">{{.Name}}</p>
+                                                                        <span style="width: auto;height: 17px;font-family:
                                                                 ooredoo-Regular;font-size: 12px;font-weight:
                                                                 normal;font-style: normal;font-stretch:
                                                                 normal;line-height: normal;letter-spacing: 0.05px;color:
-                                                                #191921;">08561234123</span><span>.</span>
+                                                                #191921;">{{.Phone}}</span><span>.</span>
                                                                         <span style="
                                                             /* width: 141px; */
                                                             height: 17px;
@@ -292,7 +291,7 @@
                                                             line-height: normal;
                                                             letter-spacing: 0.05px;
                                                             color: #191921;
-                                                            ">ralph.rogers@gmail.com</span>
+                                                            ">{{.Email}}</span>
                                                                         <p class="mt-2" style="
                                                                 /* width: 240px; */
                                                                 height:
@@ -308,10 +307,7 @@
                                                                 1.5;
                                                                 letter-spacing: 0.05px;
                                                                 color: #191921;
-                                                                ">
-                                                                            Jl. Raya Jatiwaringin, Kompleks Citra Indah
-                                                                            Pondok Gede, Bekasi
-                                                                            17411
+                                                                ">{{.Address}}
                                                                         </p>
                                                                     </td>
                                                                 </tr>
@@ -325,12 +321,12 @@
                                                                 <tr >
                                                                     <td valign="top"
                                                                         style="/* width: 200px; */height: 15px;padding: 15px 25px;object-fit: contain;font-family: ooredoo-Heavy;font-size: 12px;font-weight: 900;font-style: normal;font-stretch: normal;line-height: normal;letter-spacing: 0.59px;color: rgba(143, 143, 143, 0.6);">
-                                                                        PAYMENT METHOD
+                                                                    <p style="margin: 0 0 5px 0"> PAYMENT METHOD </p>
                                                                         <p style="height: 22px;font-family:
                                                             ooredoo-Heavy;padding:0.1px;font-size: 18px;font-weight:
                                                             900;font-style: normal;font-stretch: normal;line-height:
                                                             normal;letter-spacing: 0.08px;color: #191921;">
-                                                                            CREDIT CARD</p>
+                                                                            {{.PaymentMethod}}</p>
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -346,7 +342,7 @@
                                                         line-height: normal;
                                                         letter-spacing: 0.59px;
                                                         color: rgba(143, 143, 143, 0.6);">
-                                                                        AMOUNT
+                                                                    <p style="margin: 0 0 5px 0"> AMOUNT </p>
                                                                         <p style="height: 22px;
                                                             font-family: ooredoo-Heavy;
                                                             font-size: 18px;
@@ -356,7 +352,7 @@
                                                             line-height: normal;
                                                             letter-spacing: 0.08px;
                                                             color: #191921;">
-                                                                            Rp 130.000</p>
+                                                                            Rp {{.Amount}}</p>
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -376,6 +372,9 @@
     color: #202123;
     ">Cek status pemesanan Anda secara berkala di menu “Lacak Pemesanan”
                                                         </p>
+                                                        <a href="{{.TrackLink}}"  class="Rectangle LACAK-PESANAN" style="text-decoration:none;">
+                                                            LACAK PESANAN
+                                                        </a>
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -384,9 +383,6 @@
                                 </tr>
                             </tbody>
                         </table>
-                        <button type="button" class="Rectangle LACAK-PESANAN">
-                            LACAK PESANAN
-                        </button>
                     </td>
                 </tr>
             </tbody>
